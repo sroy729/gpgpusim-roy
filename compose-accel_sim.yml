@@ -1,0 +1,9 @@
+services:
+    accel_sim:
+        build: .
+        volumes:
+            - ./accel:/home/accel
+        tty: true
+        stdin_open: true
+        command: /bin/bash
+        working_dir: /home/accel
